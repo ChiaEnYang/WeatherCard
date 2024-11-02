@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>天氣卡卡</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/weather-card.css">
+</head>
+
+<body>
+    <main>
+        <nav>
+            <div class="nav time">
+                <div class="clock"></div>
+                <div class="report-time"></div>
+            </div>
+            <div class="nav header">
+                <h1 class="nav header-text animate__animated animate__bounce">WWWeather</h1>
+                <div class="nav btn-group">
+                    <button type="button" class="btn" id="all-area">所有地區</button>
+                    <button type="button" class="btn" id="northern-area">北部</button>
+                    <button type="button" class="btn" id="central-area">中部</button>
+                    <button type="button" class="btn" id="southern-area">南部</button>
+                    <button type="button" class="btn" id="eastern-area">東部</button>
+                    <button type="button" class="btn" id="outlying-area">外島</button>
+                </div>
+            </div>
+        </nav>
+        <div class="card-region"></div>
+    </main>
+
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="./js/weather-card.js"></script>
+</body>
+
+</html>
